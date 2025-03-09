@@ -1,7 +1,15 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+
+import Image from 'next/image';
+import styles from './page.module.css';
+import { useGetProducts } from '@/common/hooks/useGetProducts';
 
 export default function Home() {
+  const { data, isLoading, error } = useGetProducts();
+  console.log(data);
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
