@@ -1,7 +1,17 @@
 import { Character } from '@/common/types';
+import { apiClient } from './apiClient';
 
-export const getProducts = async (): Promise<Character[]> => {
-  const response = await fetch('/api/products');
-  const data = await response.json();
-  return data;
+export type GetProductsResponse = {
+  data: Character[];
+  total: number;
+};
+
+export const getProducts = async (params: Record<string, string>) => {
+  const response = await apiClient.v1.get<GetProductsResponse>(
+    '/api/products',
+    {
+      params,
+    }
+  );
+  return response.data;
 };
