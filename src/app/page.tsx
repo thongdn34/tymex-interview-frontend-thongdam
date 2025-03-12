@@ -1,17 +1,21 @@
 'use client';
 
-import { useGetProducts } from '@/common/hooks/useGetProducts';
 import { Box } from '@/components/atoms/Box/Box';
 import { Header } from '@/components/Header';
-export default function Home() {
-  const { data, isLoading, error } = useGetProducts();
-  console.log(data);
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
+import MarketPlace from '@/components/MarketPlace';
+import Skeleton from 'antd/es/skeleton';
+import dynamic from 'next/dynamic';
 
+const Banner = dynamic(() => import('@/components/Banner'), {
+  ssr: false,
+  loading: () => <Skeleton style={{ width: '100%', height: 400 }} />,
+});
+export default function Home() {
   return (
     <Box>
       <Header />
+      <Banner />
+      <MarketPlace />
     </Box>
   );
 }

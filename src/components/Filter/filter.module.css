@@ -1,0 +1,74 @@
+.groupFilterSearch {
+  display: flex;
+  align-items: center;
+}
+
+.priceSliderContainer {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.sliderLabel {
+  margin-bottom: 1.5rem;
+}
+
+.sliderRange {
+  margin-top: 1.5rem;
+
+  & div {
+    color: #d6d6d6;
+  }
+}
+
+.sliderRangeNumber::after {
+  content: 'ETH';
+  margin-left: 0.3rem;
+}
+
+.action {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.resetButton {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.resetIcon {
+  width: 18px !important;
+  height: 18px !important;
+  margin-right: 0.375rem;
+}
+
+@media (max-width: 1440px) {
+  .groupFilter {
+    display: none;
+  }
+
+  .priceSliderContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .sliderContainer {
+    width: 100%;
+    margin: 2rem 3rem;
+  }
+
+  .sliderRangeNumber::after {
+    content: '';
+  }
+
+  .sliderRangeNumber:nth-child(1) {
+    left: -1rem;
+  }
+
+  .sliderRangeNumber:nth-child(2) {
+    right: -1.4rem;
+  }
+}

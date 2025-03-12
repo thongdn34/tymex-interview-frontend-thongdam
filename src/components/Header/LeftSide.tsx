@@ -4,14 +4,15 @@ import { droneFont } from '@/core/fonts';
 import styles from './header.module.css';
 import { MenuOutlined } from '@ant-design/icons';
 import { Col, Drawer, Row } from 'antd';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { HEADERS } from '@/common/constants';
+import { useQueryParams } from '@/common/hooks/useQueryParams';
 
 export const LeftSide = () => {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const page = searchParams.get('page');
+  const { getParam } = useQueryParams();
+  const page = getParam('page');
   const [drawerVisible, setDrawerVisible] = useState(false);
 
   const onChange = (page: string) => {

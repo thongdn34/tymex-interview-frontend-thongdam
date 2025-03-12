@@ -1,0 +1,17 @@
+.banner {
+  max-height: 50rem;
+  background-image: url('/neon-bg.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.charactersBanner {
+  padding-top: 10rem;
+}
+
+@media (max-width: 1440px) {
+  .charactersBanner {
+    padding-top: 8rem;
+  }
+}

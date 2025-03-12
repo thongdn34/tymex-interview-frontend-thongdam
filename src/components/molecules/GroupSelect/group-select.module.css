@@ -1,0 +1,17 @@
+.groupSelect {
+  flex-direction: column !important;
+  margin-bottom: 1.5rem;
+}
+
+.groupSelectLabel {
+  color: var(--blur);
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.8rem;
+}
+
+.groupSelectInput {
+  width: 100%;
+  height: 2.75rem !important;
+  background: none !important;
+}

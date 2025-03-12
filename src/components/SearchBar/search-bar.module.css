@@ -1,0 +1,11 @@
+.searchInput {
+  border-color: var(--blur) !important;
+}
+
+.searchInput {
+  & input::placeholder {
+    color: var(--blur) !important;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

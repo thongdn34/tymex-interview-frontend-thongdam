@@ -1,9 +1,14 @@
 import { BaseRef } from '@/core/types';
-import { forwardRef } from 'react';
-import styles from './styles.module.css';
+import { ComponentProps, forwardRef } from 'react';
+import styles from './button.module.css';
 
-export const BaseButton: BaseRef<HTMLButtonElement> = forwardRef(
-  ({ children, className, ...props }, ref) => {
+export type BaseButtonProps = Pick<
+  ComponentProps<'button'>,
+  'onClick' | 'disabled' | 'className' | 'type' | 'form' | 'onMouseLeave'
+>;
+
+export const BaseButton: BaseRef<HTMLButtonElement, BaseButtonProps> =
+  forwardRef(({ children, className, ...props }, ref) => {
     return (
       <button
         ref={ref}
@@ -14,5 +19,4 @@ export const BaseButton: BaseRef<HTMLButtonElement> = forwardRef(
         {children}
       </button>
     );
-  }
-);
+  });

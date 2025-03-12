@@ -1,0 +1,38 @@
+.main {
+  padding-top: 8rem;
+  background-image: url('/body-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  flex-flow: unset !important;
+  flex-direction: column;
+}
+
+.filter {
+  min-width: 340px !important;
+  margin-right: 3rem !important;
+}
+
+.product-list {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 1440px) {
+  .main {
+    padding-top: 2rem;
+  }
+
+  .container {
+    flex-flow: row wrap !important;
+  }
+
+  .filter {
+    min-width: unset !important;
+    margin: 0 !important;
+    width: 100%;
+  }
+}

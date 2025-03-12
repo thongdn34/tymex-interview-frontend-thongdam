@@ -1,0 +1,17 @@
+.input {
+  height: 2.5rem;
+  color: var(--white) !important;
+  background: none !important;
+  border-radius: 0.25rem !important;
+}
+
+.input::placeholder {
+  color: var(--blur) !important;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.input:focus,
+.input:hover {
+  border-color: #d85697 !important;
+}
