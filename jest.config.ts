@@ -14,7 +14,21 @@ const baseJestConfig = {
   testEnvironment: 'jest-environment-jsdom',
   testPathIgnorePatterns: ['/node_modules/'],
   transform: {
-    '^.+\\.(t|j)sx?$': ['@swc/jest'],
+    '^.+\\.(t|j)sx?$': [
+      '@swc/jest',
+      {
+        jsc: {
+          transform: {
+            react: {
+              runtime: 'automatic',
+            },
+          },
+          experimental: {
+            plugins: [['@swc/plugin-styled-jsx', {}]],
+          },
+        },
+      },
+    ],
   },
   coverageThreshold: {
     global: {
@@ -24,15 +38,7 @@ const baseJestConfig = {
       statements: 50,
     },
   },
-  coveragePathIgnorePatterns: [
-    'types.ts',
-    'src/core/**',
-    'src/app/**/*',
-    'src/components/molecules/**',
-    'src/components/atoms/**',
-    'src/data-layer/**',
-    '!src/mocks/**/*',
-  ],
+  coveragePathIgnorePatterns: ['types.ts', 'src/data-layer/**'],
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testEnvironmentOptions: {
