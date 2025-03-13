@@ -7,7 +7,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "npm run test --watch --passWithNoTests",
+    "test:coverage": "npm run test --coverage --passWithNoTests",
+    "test:report": "npm run test:coverage --coverageReporters text --coverageReporters json --coverageReporters html --coverageReporters clover --coverageDirectory ./coverage/"
   },
   "lint-staged": {
     "*.{tsx,ts,js,jsx}": [

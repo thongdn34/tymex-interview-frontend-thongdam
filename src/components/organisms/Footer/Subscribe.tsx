@@ -4,8 +4,8 @@ import { Box } from '@/components/atoms/Box/Box';
 import { droneFont } from '@/core/fonts';
 import footerStyles from './footer.module.css';
 import { Col, Row, Space } from 'antd';
-import { BaseInput } from '../molecules/Input/BaseInput';
-import { BaseButton } from '../molecules/Button/BaseButton';
+import { BaseInput } from '../../molecules/Input/BaseInput';
+import { BaseButton } from '../../molecules/Button/BaseButton';
 
 export const Subscribe = () => {
   return (

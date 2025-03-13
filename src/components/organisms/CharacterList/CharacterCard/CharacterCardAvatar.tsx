@@ -1,8 +1,8 @@
 import { gradients } from '@/core/palette';
 import { Space } from 'antd';
 import styles from '../character-list.module.css';
-import { Box } from '../../atoms/Box/Box';
-import { Image } from '../../atoms/Image/Image';
+import { Box } from '../../../atoms/Box/Box';
+import { Image } from '../../../atoms/Image/Image';
 import { CHARACTER_IMAGES } from '@/common/constants';
 
 export const CharacterCardAvatar = (props: {

@@ -1,7 +1,7 @@
 import { Tabs } from 'antd';
 import React from 'react';
 import { useQueryParams } from '@/common/hooks/useQueryParams';
-import { Image } from '../atoms/Image/Image';
+import { Image } from '../../atoms/Image/Image';
 import { CATEGORIES } from '@/common/constants';
 
 export const SecondaryFilter = () => {

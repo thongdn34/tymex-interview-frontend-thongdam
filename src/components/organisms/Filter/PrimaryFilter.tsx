@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '../atoms/Box/Box';
+import { Box } from '../../atoms/Box/Box';
 import SearchBar from '../SearchBar';
 import { useRouter, useSearchParams } from 'next/navigation';
 import styles from './filter.module.css';

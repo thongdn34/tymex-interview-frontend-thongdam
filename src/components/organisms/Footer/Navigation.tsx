@@ -1,6 +1,6 @@
 'use client';
 
-import { Box } from '../atoms/Box/Box';
+import { Box } from '../../atoms/Box/Box';
 import { droneFont } from '@/core/fonts';
 import footerStyles from './footer.module.css';
 import { Col, Row, Space } from 'antd';

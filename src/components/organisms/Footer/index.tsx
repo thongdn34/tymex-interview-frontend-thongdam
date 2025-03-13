@@ -1,11 +1,11 @@
 import { Col, Divider, Row } from 'antd';
 import React from 'react';
-import { Box } from '../atoms/Box/Box';
+import { Box } from '../../atoms/Box/Box';
 import { Navigation } from './Navigation';
 import footerStyles from './footer.module.css';
 import { ContactUs } from './ContacUs';
 import { Subscribe } from './Subscribe';
-import { CopyWriter } from './Copywriter';
+import { CopyWriter } from './CopyWriter';
 
 const Footer = () => {
   return (

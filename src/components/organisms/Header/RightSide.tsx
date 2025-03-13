@@ -4,7 +4,7 @@ import { Box } from '@/components/atoms/Box/Box';
 import { Image } from '@/components/atoms/Image/Image';
 import styles from './header.module.css';
 import { Col, Dropdown, Row, Space } from 'antd';
-import { BaseButton } from '../molecules/Button/BaseButton';
+import { BaseButton } from '../../molecules/Button/BaseButton';
 
 export const RightSide = () => {
   return (

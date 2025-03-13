@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react';
-import { Box } from '../atoms/Box/Box';
+import { Box } from '../../atoms/Box/Box';
 import { Spin } from 'antd';
-import { BaseButton } from '../molecules/Button/BaseButton';
+import { BaseButton } from '../../molecules/Button/BaseButton';
 import styles from './character-list.module.css';
 
 interface ViewMoreButtonProps {

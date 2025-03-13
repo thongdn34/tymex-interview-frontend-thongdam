@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { Box } from '../atoms/Box/Box';
+import { Box } from '../../atoms/Box/Box';
 import { useQueryParams } from '@/common/hooks/useQueryParams';
-import { GroupSelect } from '../molecules/GroupSelect/GroupSelect';
+import { GroupSelect } from '../../molecules/GroupSelect/GroupSelect';
 import {
   DEFAULT_FILTERS,
   TIERS,
@@ -13,8 +13,8 @@ import {
 import { Col } from 'antd';
 import { Row } from 'antd';
 import styles from './filter.module.css';
-import { Image } from '../atoms/Image/Image';
-import { BaseButton } from '../molecules/Button/BaseButton';
+import { Image } from '../../atoms/Image/Image';
+import { BaseButton } from '../../molecules/Button/BaseButton';
 export const GroupFilter = () => {
   const { onChangeParams, onClearParams, getParam } = useQueryParams();
   const [filters, setFilters] = React.useState(DEFAULT_FILTERS);

@@ -1,9 +1,9 @@
 import { User } from '@/common/types';
 import { Tooltip } from 'antd';
 import React, { useMemo } from 'react';
-import { Box } from '../../atoms/Box/Box';
+import { Box } from '../../../atoms/Box/Box';
 import { DEFAULT_UNIT } from '@/common/constants';
-import { Image } from '../../atoms/Image/Image';
+import { Image } from '../../../atoms/Image/Image';
 import styles from '../character-list.module.css';
 import { UserAvatar } from './UserAvatar';
 import { formatPrice } from '@/common/utils';

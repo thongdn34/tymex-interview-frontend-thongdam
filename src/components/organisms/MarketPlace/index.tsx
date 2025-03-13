@@ -1,12 +1,12 @@
 import { Col } from 'antd';
 import React from 'react';
-import { Box } from '../atoms/Box/Box';
+import { Box } from '../../atoms/Box/Box';
 import { Row } from 'antd';
 import styles from './market-place.module.css';
 import { PrimaryFilter } from '../Filter/PrimaryFilter';
 import { SecondaryFilter } from '../Filter/SecondaryFilter';
 import { CharacterList } from '../CharacterList';
-import { Image } from '../atoms/Image/Image';
+import { Image } from '../../atoms/Image/Image';
 
 const MarketPlace = () => {
   return (

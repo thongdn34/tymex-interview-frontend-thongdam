@@ -1,5 +1,5 @@
+import { useQueryParams } from '@/common/hooks/useQueryParams';
 import { getProducts, GetProductsResponse } from '@/data-layer/getProducts';
-import { useQueryParams } from './useQueryParams';
 import { useQuery, UseQueryFnArgs } from '@/data-layer/useQuery';
 
 export const useGetProducts = (

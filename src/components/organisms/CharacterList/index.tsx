@@ -1,9 +1,9 @@
 'use client';
 
-import { useGetProducts } from '@/common/hooks/useGetProducts';
+import { useGetProducts } from '@/data-layer/hooks/useGetProducts';
 import { notification, Row } from 'antd';
 import { useState } from 'react';
-import { Box } from '../atoms/Box/Box';
+import { Box } from '../../atoms/Box/Box';
 import styles from './character-list.module.css';
 import { CardSkeleton } from './CardSkeleton';
 import { CharacterCard } from './CharacterCard/CharacterCard';

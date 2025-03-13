@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import { BaseInput } from '../molecules/Input/BaseInput';
+import { BaseInput } from '../../molecules/Input/BaseInput';
 import styles from './search-bar.module.css';
 import { InputRef } from 'antd';
-import { Image } from '../atoms/Image/Image';
+import { Image } from '../../atoms/Image/Image';
 import { debounce } from '@/common/utils';
 
 interface SearchBarProps {

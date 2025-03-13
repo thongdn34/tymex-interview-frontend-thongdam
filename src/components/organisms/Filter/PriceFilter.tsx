@@ -2,7 +2,7 @@
 
 import { Col } from 'antd';
 import React from 'react';
-import { Box } from '../atoms/Box/Box';
+import { Box } from '../../atoms/Box/Box';
 import { Row, Slider } from 'antd';
 import styles from './filter.module.css';
 import { DEFAULT_UNIT } from '@/common/constants';
