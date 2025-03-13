@@ -3,6 +3,7 @@
 import { Box } from '@/components/atoms/Box/Box';
 import { Header } from '@/components/Header';
 import MarketPlace from '@/components/MarketPlace';
+import Footer from '@/components/Footer';
 import Skeleton from 'antd/es/skeleton';
 import dynamic from 'next/dynamic';
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <Banner />
       <MarketPlace />
+      <Footer />
     </Box>
   );
 }
